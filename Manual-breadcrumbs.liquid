@@ -3,7 +3,7 @@
   {%- style -%}
     
     /* Settings Variables */
-    .ed_breadcrumbs-section#ed_section-{{ section.id }} {
+    .Ak_breadcrumbs-section#Ak_section-{{ section.id }} {
       --breadcrumbs-alignment: {{ section.settings.breadcrumbs_alignment }};
       --breadcrumbs-text-color: {{ section.settings.text_color }};
       --breadcrumbs-font-size: {{ section.settings.font_size }}px;
@@ -24,19 +24,19 @@
     }
 
     /* Section */
-    .ed_breadcrumbs-section {
+    .Ak_breadcrumbs-section {
       padding-top: var(--padding-top);
       padding-bottom: var(--padding-bottom);
       padding-left: var(--padding-left);
       padding-right: var(--padding-right);
       color: var(--breadcrumbs-text-color);
     }
-    .ed_breadcrumbs-section * {
+    .Ak_breadcrumbs-section * {
       color: var(--breadcrumbs-text-color);
     }
 
     @media (max-width: 767px) {
-      .ed_breadcrumbs-section {
+      .Ak_breadcrumbs-section {
         padding-left: var(--padding-left-mobile);
         padding-right: var(--padding-right-mobile);
         padding-top: var(--padding-top-mobile);
@@ -45,25 +45,25 @@
     }
 
     /* Nav */
-    nav.ed_breadcrumbs {
+    nav.Ak_breadcrumbs {
       margin: 0 auto;
       max-width: var(--max-width);
       text-align: var(--breadcrumbs-alignment);
     }
 
     /* List items */
-    .ed_breadcrumbs-list {
+    .Ak_breadcrumbs-list {
       list-style-type: none;
       margin: 0;
       padding: 0;
     }
-    .ed_breadcrumbs-list li {
+    .Ak_breadcrumbs-list li {
       display: inline-flex;
       align-items: center;
     }
 
     /* Arrows */
-    .ed_breadcrumbs-list.arrows li:not(:last-child):after {
+    .Ak_breadcrumbs-list.arrows li:not(:last-child):after {
       border-style: solid;
       border-width: .10em .10em 0 0;
       content: '';
@@ -78,31 +78,31 @@
       /* top: -0.1em; */
     }
 
-    .ed_breadcrumbs-list.slashes li:not(:last-child):after {
+    .Ak_breadcrumbs-list.slashes li:not(:last-child):after {
       content: '/';
       margin: 0 .4em;
       font-size: var(--breadcrumbs-font-size);
     }
 
     /* Links */
-    .ed_breadcrumbs-list a {
+    .Ak_breadcrumbs-list a {
       color: inherit;
       text-decoration: none;
       font-size: var(--breadcrumbs-font-size);
       font-weight: var(--breadcrumbs-font-weight);
       text-transform: var(--breadcrumbs-font-case);
     }
-    .ed_breadcrumbs-list a:hover,
-    .ed_breadcrumbs-list a:focus {
+    .Ak_breadcrumbs-list a:hover,
+    .Ak_breadcrumbs-list a:focus {
       text-decoration: underline;
     }
 
   {%- endstyle -%}
 
-  <div class="ed_breadcrumbs-section {{ section.settings.custom_class }}" id="ed_section-{{ section.id }}">
+  <div class="Ak_breadcrumbs-section {{ section.settings.custom_class }}" id="Ak_section-{{ section.id }}">
       
-    <nav class="ed_breadcrumbs" role="navigation" aria-label="breadcrumbs">
-      <ol class="ed_breadcrumbs-list {{ section.settings.separator_class }}">
+    <nav class="Ak_breadcrumbs" role="navigation" aria-label="breadcrumbs">
+      <ol class="Ak_breadcrumbs-list {{ section.settings.separator_class }}">
 
         <li>
           <a href="/">Home</a>
@@ -270,8 +270,7 @@
     "settings": [
       {
         "type": "header",
-        "content": "⚡️ Better Breadcrumbs by ed.codes",
-        "info": "Purchased from https://edcodes.gumroad.com/l/breadcrumbs. For support or feedback, please contact hi@ed.codes."
+        "content": "⚡️ Better Breadcrumbs by Akshay",
       },
       {
         "type": "text",
